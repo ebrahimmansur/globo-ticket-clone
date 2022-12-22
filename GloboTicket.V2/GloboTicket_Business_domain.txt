@@ -2,17 +2,17 @@ My notes
 
 #GloboTicket Business Domain#
 
- #Define the problem space in the business domain
+1 #Define the problem space in the business domain
    - accounts
    - events
    - categories
    - orders
 ----------------------------------------------
-#Define Actores in the problem space
+2 #Define Actores in the problem space
  - managment
  - customers
  ----------------------------------------------
- #Define Prcoess of each actor in the problem spaces and rules
+ 3 #Define Prcoess of each actor in the problem spaces and rules
 
  - accounts
    - customer 
@@ -24,6 +24,17 @@ My notes
        -> approve customer register request
        -> deny customer register request
 -----------------------------------------------------
+4 #Solution space
 
+   Define the business componets for each problem space
+      - interactores
+      - contracts
+      - vlaue objects
+
+
+   Define the I/O componets for each problem space core 
+       - Api
+       - Databse
+       - events 
 
    
