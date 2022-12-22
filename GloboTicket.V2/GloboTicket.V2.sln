@@ -18,6 +18,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders", "Orders", "{F481D6
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Accounts.Api", "GloboTicket.V2.Accounts.Api\GloboTicket.V2.Accounts.Api.csproj", "{10C91EF4-5843-442D-9E8E-C69284B7586C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Events.Api", "GloboTicket.V2.Events.Api\GloboTicket.V2.Events.Api.csproj", "{5B5881B3-3519-4D6E-9768-918D5E63E96B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,6 +34,10 @@ Global
 		{10C91EF4-5843-442D-9E8E-C69284B7586C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{10C91EF4-5843-442D-9E8E-C69284B7586C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{10C91EF4-5843-442D-9E8E-C69284B7586C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5B5881B3-3519-4D6E-9768-918D5E63E96B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5B5881B3-3519-4D6E-9768-918D5E63E96B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5B5881B3-3519-4D6E-9768-918D5E63E96B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5B5881B3-3519-4D6E-9768-918D5E63E96B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,6 +48,7 @@ Global
 		{DBC23926-E07B-4ABA-BC88-8B7A7EFC4B36} = {88985FA1-6D31-452D-AF90-5DA714DA6B06}
 		{F481D6B2-4360-4D6F-8F66-A3369A869AEC} = {88985FA1-6D31-452D-AF90-5DA714DA6B06}
 		{10C91EF4-5843-442D-9E8E-C69284B7586C} = {F390545B-7D7D-4AE0-971E-E1DBAF779F04}
+		{5B5881B3-3519-4D6E-9768-918D5E63E96B} = {DBC23926-E07B-4ABA-BC88-8B7A7EFC4B36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCE21373-B43D-4C19-93DF-4185980A5E6C}
