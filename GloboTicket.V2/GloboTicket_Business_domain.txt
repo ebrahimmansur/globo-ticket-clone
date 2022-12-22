@@ -1,0 +1,29 @@
+My notes
+
+#GloboTicket Business Domain#
+
+ #Define the problem space in the business domain
+   - accounts
+   - events
+   - categories
+   - orders
+----------------------------------------------
+#Define Actores in the problem space
+ - managment
+ - customers
+ ----------------------------------------------
+ #Define Prcoess of each actor in the problem spaces and rules
+
+ - accounts
+   - customer 
+         -> register
+         -> login
+   - mangment
+       -> login
+       -> create acctounts
+       -> approve customer register request
+       -> deny customer register request
+-----------------------------------------------------
+
+
+   

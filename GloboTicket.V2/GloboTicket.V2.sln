@@ -4,8 +4,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{88985FA1-6D31-452D-AF90-5DA714DA6B06}"
+	ProjectSection(SolutionItems) = preProject
+		GloboTicket_Business_domain.txt = GloboTicket_Business_domain.txt
+	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Host", "GloboTicket.V2.Host\GloboTicket.V2.Host.csproj", "{C57CC6E2-0011-456B-999B-87E7FB453359}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.V2.Host", "GloboTicket.V2.Host\GloboTicket.V2.Host.csproj", "{C57CC6E2-0011-456B-999B-87E7FB453359}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
