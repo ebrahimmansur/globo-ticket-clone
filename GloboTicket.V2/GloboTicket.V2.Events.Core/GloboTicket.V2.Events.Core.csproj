@@ -6,4 +6,12 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="OneOf" Version="3.0.223" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GloboTicket.V2.CrossCuttingConcerns.Core\GloboTicket.V2.CrossCuttingConcerns.Core.csproj" />
+  </ItemGroup>
+
 </Project>

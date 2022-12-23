@@ -1,4 +1,6 @@
-﻿using System;
+﻿using GloboTicket.V2.CrossCuttingConcerns.Core.Results;
+using OneOf;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,12 +22,14 @@ namespace GloboTicket.V2.Events.Core.Customers.ViewEvents
             _customerViewEvents = customerViewEvents;
         }
 
-       public IReadOnlySet<CustomerViewEventVM> Execute(
+       public EitherResult<IReadOnlySet<CustomerViewEventVM>,CustomerViewEventsFailure> Execute(
            CancellationToken? cancellationToken = null
            )
         {
+            //process businss rules 
+            //publish events
             var customerViewEvents = _customerViewEvents.Execute();
-            return customerViewEvents;
+            return new EitherResult<IReadOnlySet<CustomerViewEventVM>, CustomerViewEventsFailure>( customerViewEvents);
 
         }
     }
