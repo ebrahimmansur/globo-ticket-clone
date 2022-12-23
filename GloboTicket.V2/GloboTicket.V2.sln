@@ -16,11 +16,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Events", "Events", "{DBC239
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Orders", "Orders", "{F481D6B2-4360-4D6F-8F66-A3369A869AEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Accounts.Api", "GloboTicket.V2.Accounts.Api\GloboTicket.V2.Accounts.Api.csproj", "{10C91EF4-5843-442D-9E8E-C69284B7586C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.V2.Accounts.Api", "GloboTicket.V2.Accounts.Api\GloboTicket.V2.Accounts.Api.csproj", "{10C91EF4-5843-442D-9E8E-C69284B7586C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Events.Api", "GloboTicket.V2.Events.Api\GloboTicket.V2.Events.Api.csproj", "{5B5881B3-3519-4D6E-9768-918D5E63E96B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.V2.Events.Api", "GloboTicket.V2.Events.Api\GloboTicket.V2.Events.Api.csproj", "{5B5881B3-3519-4D6E-9768-918D5E63E96B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Accounts.Core", "GloboTicket.V2.Accounts.Core\GloboTicket.V2.Accounts.Core.csproj", "{DC875EF3-5781-4EBC-B495-D0F8ED0A8BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GloboTicket.V2.Accounts.Core", "GloboTicket.V2.Accounts.Core\GloboTicket.V2.Accounts.Core.csproj", "{DC875EF3-5781-4EBC-B495-D0F8ED0A8BC1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GloboTicket.V2.Events.Core", "GloboTicket.V2.Events.Core\GloboTicket.V2.Events.Core.csproj", "{462F1695-A92E-44A3-BEFB-48DBAE36153E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -44,6 +46,10 @@ Global
 		{DC875EF3-5781-4EBC-B495-D0F8ED0A8BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DC875EF3-5781-4EBC-B495-D0F8ED0A8BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DC875EF3-5781-4EBC-B495-D0F8ED0A8BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{462F1695-A92E-44A3-BEFB-48DBAE36153E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{462F1695-A92E-44A3-BEFB-48DBAE36153E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{462F1695-A92E-44A3-BEFB-48DBAE36153E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{462F1695-A92E-44A3-BEFB-48DBAE36153E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -56,6 +62,7 @@ Global
 		{10C91EF4-5843-442D-9E8E-C69284B7586C} = {F390545B-7D7D-4AE0-971E-E1DBAF779F04}
 		{5B5881B3-3519-4D6E-9768-918D5E63E96B} = {DBC23926-E07B-4ABA-BC88-8B7A7EFC4B36}
 		{DC875EF3-5781-4EBC-B495-D0F8ED0A8BC1} = {F390545B-7D7D-4AE0-971E-E1DBAF779F04}
+		{462F1695-A92E-44A3-BEFB-48DBAE36153E} = {DBC23926-E07B-4ABA-BC88-8B7A7EFC4B36}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {DCE21373-B43D-4C19-93DF-4185980A5E6C}

@@ -24,15 +24,14 @@ My notes
        -> approve customer register request
        -> deny customer register request
 -----------------------------------------------------
-4 #Solution space
+4 # Define Solution space
 
    Define the business componets for each problem space
       - interactores
       - contracts
       - vlaue objects
-
-
-   Define the I/O componets for each problem space core 
+------------------------
+5 #  Define the I/O componets for each problem space core 
        - Api
        - Databse
        - events 
