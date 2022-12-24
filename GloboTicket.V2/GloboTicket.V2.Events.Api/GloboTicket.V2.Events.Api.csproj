@@ -12,6 +12,10 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\GloboTicket.V2.Events.Infrastructure\GloboTicket.V2.Events.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
 	  <None Update="eventsettings.json">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </None>

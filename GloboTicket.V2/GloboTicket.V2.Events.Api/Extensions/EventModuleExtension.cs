@@ -1,4 +1,6 @@
 ﻿using GloboTicket.V2.Events.Api.Customers.ViewEvents;
+using GloboTicket.V2.Events.Core.Customers.ViewEvents;
+using GloboTicket.V2.Events.Infrastructure.Customers.ViewEvents;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -18,6 +20,8 @@ namespace GloboTicket.V2.Events.Api.Extensions
 
             ConfigControllers(builder);
             ConfigureSettingFiles(builder);
+            ConfigCore(builder);
+            ConfigureInfu(builder);
             return builder;
         }
 
@@ -36,6 +40,18 @@ namespace GloboTicket.V2.Events.Api.Extensions
             var fileProvider = new PhysicalFileProvider(directory);
             builder.Services.AddSingleton<IFileProvider>(fileProvider);
             builder.Configuration.AddJsonFile(fileProvider, "eventsettings.json", false, true);
+        }
+
+
+
+        private static void ConfigCore(WebApplicationBuilder builder)
+        {
+            builder.Services.AddScoped<CustomerViewEventsInteractor>();
+        }
+        private static void ConfigureInfu(WebApplicationBuilder builder)
+        {
+            builder.Services.AddScoped<ICustomerViewEvents, CustomerViewEvent>();
+
         }
 
     }
