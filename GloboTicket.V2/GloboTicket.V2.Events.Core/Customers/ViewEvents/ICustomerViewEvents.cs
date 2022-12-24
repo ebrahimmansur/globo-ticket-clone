@@ -8,6 +8,6 @@ namespace GloboTicket.V2.Events.Core.Customers.ViewEvents
 {
     public interface ICustomerViewEvents
     {
-        IReadOnlySet<CustomerViewEventVM> Execute();
+        Task< IReadOnlySet<CustomerViewEventVM>> Execute();
     }
 }

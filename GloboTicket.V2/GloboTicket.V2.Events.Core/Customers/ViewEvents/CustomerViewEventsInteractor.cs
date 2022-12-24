@@ -22,13 +22,13 @@ namespace GloboTicket.V2.Events.Core.Customers.ViewEvents
             _customerViewEvents = customerViewEvents;
         }
 
-       public EitherResult<IReadOnlySet<CustomerViewEventVM>,CustomerViewEventsFailure> Execute(
+       public async Task< EitherResult<IReadOnlySet<CustomerViewEventVM>,CustomerViewEventsFailure>> ExecuteAsync(
            CancellationToken? cancellationToken = null
            )
         {
             //process businss rules 
             //publish events
-            var customerViewEvents = _customerViewEvents.Execute();
+            var customerViewEvents = await _customerViewEvents.Execute();
             return new EitherResult<IReadOnlySet<CustomerViewEventVM>, CustomerViewEventsFailure>( customerViewEvents);
 
         }

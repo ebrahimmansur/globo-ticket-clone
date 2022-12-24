@@ -12,6 +12,7 @@ namespace GloboTicket.V2.Events.Api.Customers.ViewEvents
     [Route("api/events/customer")]
     public class CustomerViewEventController : ControllerBase
     {
+
         [HttpGet("events")]
         public IActionResult Execute() => Ok();
     }
