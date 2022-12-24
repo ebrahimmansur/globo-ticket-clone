@@ -10,13 +10,13 @@ namespace GloboTicket.V2.Events.Api.Customers.ViewEvents
 {
 
     [ApiController]
-    [Route("api/events/customer")]
-    public class CustomerViewEventController : ControllerBase
+    [Route("api/customer")]
+    public class EventsController : ControllerBase
     {
 
         private readonly CustomerViewEventsInteractor _customerViewEventsInteractor;
 
-        public CustomerViewEventController(CustomerViewEventsInteractor customerViewEventsInteractor)
+        public EventsController(CustomerViewEventsInteractor customerViewEventsInteractor)
         {
             _customerViewEventsInteractor = customerViewEventsInteractor;
         }

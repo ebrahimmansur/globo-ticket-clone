@@ -1,6 +1,9 @@
 ﻿using GloboTicket.V2.Events.Api.Customers.ViewEvents;
+using GloboTicket.V2.Events.Api.Managments.CreateEvent;
 using GloboTicket.V2.Events.Core.Customers.ViewEvents;
+using GloboTicket.V2.Events.Core.Managments.CreateEvent;
 using GloboTicket.V2.Events.Infrastructure.Customers.ViewEvents;
+using GloboTicket.V2.Events.Infrastructure.Managments.CreateEvent;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -28,8 +31,13 @@ namespace GloboTicket.V2.Events.Api.Extensions
 
         private static void ConfigControllers(WebApplicationBuilder builder)
         {
+           
             builder.Services.AddControllers()
-              .AddApplicationPart(typeof(CustomerViewEventController).Assembly);
+              .AddApplicationPart(typeof(Customers.ViewEvents.EventsController).Assembly);
+
+            builder.Services.AddControllers()
+             .AddApplicationPart(typeof(Managments.CreateEvent.EventsController).Assembly);
+
         }
 
 
@@ -47,11 +55,13 @@ namespace GloboTicket.V2.Events.Api.Extensions
         private static void ConfigCore(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<CustomerViewEventsInteractor>();
+            builder.Services.AddScoped<ManagmentCreateEventInteractor>();
         }
         private static void ConfigureInfu(WebApplicationBuilder builder)
         {
             builder.Services.AddScoped<ICustomerViewEvents, CustomerViewEvent>();
 
+            builder.Services.AddScoped<IManagmentCreateEvent, ManagmentCreateEvent>();
         }
 
     }
