@@ -33,10 +33,10 @@ namespace GloboTicket.V2.Events.Api.Extensions
         {
            
             builder.Services.AddControllers()
-              .AddApplicationPart(typeof(Customers.ViewEvents.EventsController).Assembly);
+              .AddApplicationPart(typeof(Customers.ViewEvents.CustomerViewEventsController).Assembly);
 
             builder.Services.AddControllers()
-             .AddApplicationPart(typeof(Managments.CreateEvent.EventsController).Assembly);
+             .AddApplicationPart(typeof(Managments.CreateEvent.ManagmentCreateEventsController).Assembly);
 
         }
 
