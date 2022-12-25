@@ -22,14 +22,26 @@ namespace GloboTicket.V2.Events.Api.Managments.CreateEvent
             _managmentCreateEventInteractor = managmentCreateEventInteractor;
         }
 
+
+        [ProducesResponseType(type:typeof(Guid),statusCode:StatusCodes.Status200OK)]
+        [ProducesResponseType( statusCode: StatusCodes.Status400BadRequest)]
         [HttpPost()]
-        public async Task<IActionResult> ExecuteAsync()
+        public async Task<IActionResult> ExecuteAsync(ManagmentCreateEventRequest request)
         {
 
-           var eventId = await  _managmentCreateEventInteractor.ExecuteAsync();
+           var eventId = await  _managmentCreateEventInteractor
+                .ExecuteAsync(
+               title:request.Title,
+               description:request.Description
+               );
+
            return Ok(eventId);
 
 
         }
     }
+
+
+    public record ManagmentCreateEventRequest(
+        string Title,string Description);
 }

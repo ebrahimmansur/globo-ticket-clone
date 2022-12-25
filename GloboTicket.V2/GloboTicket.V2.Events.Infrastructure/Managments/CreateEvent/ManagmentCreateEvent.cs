@@ -9,11 +9,11 @@ namespace GloboTicket.V2.Events.Infrastructure.Managments.CreateEvent
 {
     public class ManagmentCreateEvent : IManagmentCreateEvent
     {
-        public async Task<Guid> ExecuteAsync()
+        public Task<Guid> ExecuteAsync(string titel, string description)
         {
            //insert the new event in the databse
            //publish event of new Event.
-           return await Task.FromResult(Guid.NewGuid());
+           return  Task.FromResult(Guid.NewGuid());
         }
     }
 }

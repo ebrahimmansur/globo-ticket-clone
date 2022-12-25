@@ -14,9 +14,12 @@ public ManagmentCreateEventInteractor(IManagmentCreateEvent managmentCreateEvent
             _managmentCreateEvent = managmentCreateEvent;
         }
 
-        public async Task<Guid> ExecuteAsync()
+        public  Task<Guid> ExecuteAsync(string title, string description)
         {
-          return  await _managmentCreateEvent.ExecuteAsync();
+          return  _managmentCreateEvent.ExecuteAsync(
+              title:title,
+              description:description
+              );
         }
     }
 }

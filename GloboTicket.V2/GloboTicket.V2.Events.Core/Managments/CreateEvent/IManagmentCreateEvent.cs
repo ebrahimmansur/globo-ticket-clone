@@ -8,6 +8,6 @@ namespace GloboTicket.V2.Events.Core.Managments.CreateEvent
 {
     public interface IManagmentCreateEvent
     {
-        Task<Guid> ExecuteAsync();
+        Task<Guid> ExecuteAsync(string title, string description);
     }
 }
