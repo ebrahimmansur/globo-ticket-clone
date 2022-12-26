@@ -3,6 +3,7 @@ using GloboTicket.V2.Events.Api.Managments.CreateEvent;
 using GloboTicket.V2.Events.Core.Customers.ViewEvents;
 using GloboTicket.V2.Events.Core.Managments.CreateEvent;
 using GloboTicket.V2.Events.Infrastructure.Customers.ViewEvents;
+using GloboTicket.V2.Events.Infrastructure.Extensions;
 using GloboTicket.V2.Events.Infrastructure.Managments.CreateEvent;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Configuration;
@@ -25,6 +26,7 @@ namespace GloboTicket.V2.Events.Api.Extensions
             ConfigureSettingFiles(builder);
             ConfigCore(builder);
             ConfigureInfu(builder);
+            builder.Services.AddEventInfo();
             return builder;
         }
 

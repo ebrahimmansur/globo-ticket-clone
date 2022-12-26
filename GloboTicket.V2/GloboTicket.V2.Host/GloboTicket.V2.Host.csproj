@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\GloboTicket.V2.CrossCuttingConcerns.Messages\GloboTicket.V2.CrossCuttingConcerns.Messages.csproj" />
     <ProjectReference Include="..\GloboTicket.V2.Events.Api\GloboTicket.V2.Events.Api.csproj" />
   </ItemGroup>
 
